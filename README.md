@@ -57,3 +57,7 @@ V) Click "Go" or "Run" to import the tables and initial data.
 Open your web browser and navigate to the local address of the project:
 http://localhost/magicbook/ <br>
 The application should now be running and connected to the database.
+
+🎥 Demo
+
+
