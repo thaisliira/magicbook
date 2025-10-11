@@ -50,7 +50,7 @@ Access phpMyAdmin: Open your web browser and navigate to: http://localhost/phpmy
 I) Create a new database with the exact name: library_magicbook<br>
 II) Import the Schema: Select the newly created library_magicbook database<br>
 III) Click on the "Import" tab.<br>
-IV)Locate and select the SQL file from the repository, named: library_magicbook(8).sql.<br>
+IV)Locate and select the SQL file from the repository, named: library_magicbook.sql.<br>
 V) Click "Go" or "Run" to import the tables and initial data.
 
 ### 4. Run the Application
