@@ -39,7 +39,7 @@ git clone https://github.com/thaisliira/magicbook.git
 cd magicbook
 ```
 ### 2. Set Up the XAMPP Environment
-Move the Project: Copy the cloned OnlineBookstore folder and paste it into your XAMPP web root directory, which is the htdocs folder.
+Move the Project: Copy the cloned magicbook folder and paste it into your XAMPP web root directory, which is the htdocs folder.
 Typical Path: C:\xampp\htdocs\
 
 ### 3. Database Setup
@@ -55,5 +55,5 @@ V) Click "Go" or "Run" to import the tables and initial data.
 
 ### 4. Run the Application
 Open your web browser and navigate to the local address of the project:
-http://localhost/OnlineBookstore/ <br>
+http://localhost/magicbook/ <br>
 The application should now be running and connected to the database.
