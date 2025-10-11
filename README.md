@@ -35,7 +35,7 @@ To run this project on your local machine, please follow the steps below:
 Open your terminal or command prompt and execute the following commands to clone the project:
 
 ```bash 
-git clone https://github.com/thaisliira/OnlineBookstore.git
+git clone https://github.com/thaisliira/magicbook.git
 cd OnlineBookstore
 ```
 ### 2. Set Up the XAMPP Environment
