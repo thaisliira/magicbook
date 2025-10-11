@@ -36,7 +36,7 @@ Open your terminal or command prompt and execute the following commands to clone
 
 ```bash 
 git clone https://github.com/thaisliira/magicbook.git
-cd OnlineBookstore
+cd magicbook
 ```
 ### 2. Set Up the XAMPP Environment
 Move the Project: Copy the cloned OnlineBookstore folder and paste it into your XAMPP web root directory, which is the htdocs folder.
