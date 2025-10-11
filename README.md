@@ -58,6 +58,8 @@ Open your web browser and navigate to the local address of the project:
 http://localhost/magicbook/ <br>
 The application should now be running and connected to the database.
 
-🎥 Demo
-
+### 🎥 Demo
+<img width="1907" height="787" alt="Captura de ecrã 2025-10-11 120620" src="https://github.com/user-attachments/assets/1620d035-3e07-4e86-b9b9-c6a796a1a68b" />
+<img width="1912" height="809" alt="Captura de ecrã 2025-10-11 120728" src="https://github.com/user-attachments/assets/d5c1f2ac-360b-4c6c-a5c3-bacd642699c3" />
+<img width="1874" height="802" alt="Captura de ecrã 2025-10-11 120604" src="https://github.com/user-attachments/assets/65aa5f55-81a6-4dbf-b4a3-d1ef8db93832" />
 
