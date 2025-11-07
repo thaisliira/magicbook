@@ -30,7 +30,7 @@ services:
     restart: always
     # Configurações do banco de dados (usuário, senha, nome do banco)
     environment:
-      MYSQL_DATABASE: 'magicbook_db'
+      MYSQL_DATABASE: 'library_magicbook'  # <--- Mude aqui
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'rootpassword' # Senha de root (administrador)
