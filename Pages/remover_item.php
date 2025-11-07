@@ -2,12 +2,12 @@
 
 if (isset($_POST["cart_id"])) {
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "library_magicbook";
+    $servername = "db";
+$username = "user";
+$password = "password";
+$dbname = "library_magicbook"; // <-- Agora o nome bate com o docker-compose!
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
         die("Conexão falhou: " . $conn->connect_error);

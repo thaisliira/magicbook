@@ -5,12 +5,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $servername = "localhost";
-    $db_username = "root";
-    $password_db = "";
-    $dbname = "library_magicbook";
+    $servername = "db";
+$username = "user";
+$password = "password";
+$dbname = "library_magicbook"; // <-- Agora o nome bate com o docker-compose!
 
-    $conn = new mysqli($servername, $db_username, $password_db, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
         die("A conexão falhou: " . $conn->connect_error);

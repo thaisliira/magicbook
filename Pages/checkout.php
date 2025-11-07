@@ -1,10 +1,10 @@
 <?php
 session_start(); 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "library_magicbook";
+$servername = "db";
+$username = "user";
+$password = "password";
+$dbname = "library_magicbook"; // <-- Agora o nome bate com o docker-compose!
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
