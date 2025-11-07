@@ -1,0 +1,47 @@
+# Versão do Docker Compose
+version: '3.8'
+
+# 'services' é a lista de 'caixas' (contêineres) que queremos rodar
+services:
+
+  # 1. O serviço da nossa aplicação (PHP + Apache)
+  app:
+    # 'build: .' diz ao Docker para construir uma imagem
+    # usando o 'Dockerfile' que está nesta mesma pasta.
+    build: .
+    container_name: magicbook-app
+    # Mapeia a porta 8080 do seu PC para a porta 80 do contêiner (onde o Apache está)
+    ports:
+      - "8080:80"
+    # Esta é a linha mais importante para o desenvolvimento:
+    # "Espelha" a sua pasta local ('.') para dentro da pasta do contêiner.
+    volumes:
+      - ./:/var/www/html
+    # Garante que o serviço 'db' inicie ANTES do 'app'
+    depends_on:
+      - db
+
+  # 2. O serviço do Banco de Dados (MySQL)
+  db:
+    # Usa a imagem oficial do MySQL, versão 8.0
+    image: mysql:8.0
+    container_name: magicbook-db
+    # 'restart: always' faz o container ligar automaticamente se o PC reiniciar
+    restart: always
+    # Configurações do banco de dados (usuário, senha, nome do banco)
+    environment:
+      MYSQL_DATABASE: 'magicbook_db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'rootpassword' # Senha de root (administrador)
+    # Mapeia a porta 33066 do seu PC para a porta 3306 do contêiner.
+    # Usamos 33066 para não conflitar com um MySQL que você já tenha localmente.
+    ports:
+      - "33066:3306"
+    # Garante que os dados do banco não se percam quando o contêiner for desligado.
+    volumes:
+      - db_data:/var/lib/mysql
+
+# Declaração do volume 'db_data' para persistir os dados
+volumes:
+  db_data:
